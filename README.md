@@ -64,7 +64,7 @@ Without proper Android SDK installation, Tailwind CSS styles may not render corr
 If you want to reset to a clean starting point:
 
 ```bash
-npm run reset-project
+npm start -c
 ```
 
 This command will move the starter code to the **app-example** directory and create a blank **app** directory for fresh development.
