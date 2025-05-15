@@ -25,6 +25,36 @@ In the output, you'll find options to open the app in a
 
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
+## Setting up iOS Simulator for Mac users
+
+For macOS users, follow these steps to properly set up the iOS simulator:
+
+```bash
+# Register Xcode path
+sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+# Accept developer license agreement
+sudo xcodebuild -license
+# Launch iOS Simulator
+open -a Simulator
+```
+
+To add new simulator devices:
+
+1. Open Xcode
+2. Navigate to Window > Devices and Simulators
+3. Click the + button at the bottom to add a new device
+
+## Setting up Android environment
+
+To properly view Tailwind CSS styles in Expo Go on Android devices, you must install Android SDK through Android Studio:
+
+1. Download and install [Android Studio](https://developer.android.com/studio)
+2. During installation, ensure the "Android SDK" option is selected
+3. After installation, open Android Studio and navigate to SDK Manager to install the necessary SDK packages
+4. Create and configure an Android Virtual Device (AVD) using the AVD Manager
+
+Without proper Android SDK installation, Tailwind CSS styles may not render correctly in Expo Go.
+
 ## Get a fresh project
 
 When you're ready, run:
